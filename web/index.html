@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conways Game of Life</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Conway's game of life</h1>
+    <div id="controls">
+        <button id="start">Start simulation!</button>
+        <button id="stop">Stop simulation!</button>
+        <button id="reset">Reset simulation!</button>
+    </div>
+
+    <div>
+        <label for="fieldWidth">
+            Field width: 
+            <input type="number" min="400" max="1920" id="fieldWidth" value="500">
+        </label>
+        <label for="fieldHeight">
+            Field height: 
+            <input type="number" min="300" max="1080" id="fieldHeight" value="350">
+        </label>
+        <label for="cellProportion">
+            Cell proportion:
+            <input type="number" min="1" max="20" id="cellProportion" value="10">
+        </label>
+    </div>
+    
+    <p id="generationCounter">Generation: 0</p>
+    <canvas id="fieldCanvas">
+        <!-- Warning for clients that does not support canvas element -->
+        <p>This page uses canvas HTML element. Please change your browser to the latest Google Chrome in order to use it.</p>
+    </canvas>
+</body>
+<script src="./game.js"></script>
+</html>
