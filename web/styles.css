@@ -12,6 +12,22 @@ body {
     row-gap: 12px;
 }
 
-#fieldCanvas {
+h1 {
+    margin: 16px 0;
+}
+
+button {
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: #222;
+    color: #eee;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;   
+}
+
+canvas {
     border: 1px solid black;
 }
